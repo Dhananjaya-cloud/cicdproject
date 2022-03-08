@@ -13,7 +13,7 @@ pipeline {
                }
            }
            steps {
-            dir(${GOPATH}/src)
+            dir(/src)
             {
             // Create our project directory.
                //sh script:'''

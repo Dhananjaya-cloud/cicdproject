@@ -18,7 +18,8 @@ pipeline {
             // Create our project directory.
                //sh script:'''
                //#!/bin/bash
-               
+               sh 'pwd'
+             sh 'cd /src'
                //cd ${GOPATH}/src
                sh 'mkdir hello-world'
                //sh 'mkdir -p ${GOPATH}/src/hello-world'

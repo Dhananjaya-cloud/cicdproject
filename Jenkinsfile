@@ -17,7 +17,7 @@ pipeline {
                sh script:'''
                #!/bin/bash
                
-               sudo cd ${GOPATH}/src
+               . cd ${GOPATH}/src
                mkdir -p ${GOPATH}/src/hello-world
                // Copy all files in our Jenkins workspace to our project directory.               
               sh cp -r ${WORKSPACE}/* ${GOPATH}/src/hello-world

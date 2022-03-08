@@ -20,7 +20,8 @@ pipeline {
                //#!/bin/bash
                
                //cd ${GOPATH}/src
-               sh 'mkdir -p ${GOPATH}/src/hello-world'
+               sh 'mkdir hello-world'
+               //sh 'mkdir -p ${GOPATH}/src/hello-world'
                // Copy all files in our Jenkins workspace to our project directory.               
               sh 'cp -r ${WORKSPACE}/* ${GOPATH}/src/hello-world'
                // Build the app.

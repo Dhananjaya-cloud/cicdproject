@@ -2,7 +2,7 @@
 pipeline {
    agent any
    environment {
-       registry = "dockercloud19/devopsproject"
+       registry = "magalixcorp/k8scicd"
        GOCACHE = "/tmp"
    }
    stages {

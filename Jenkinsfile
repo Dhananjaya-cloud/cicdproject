@@ -13,7 +13,7 @@ pipeline {
                }
            }
            steps {
-              sh 'chmod +x -R ${GOPATH}/src'
+              sh 'sudo chmod 0777 -R ${GOPATH}/src'
               sh 'cd ${GOPATH}/src'
            // dir('/src')
            // {

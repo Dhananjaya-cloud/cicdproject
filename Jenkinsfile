@@ -13,13 +13,15 @@ pipeline {
                }
            }
            steps {
-            dir('/src')
-            {
+              sh 'chmod +x -R ${env.WORKSPACE}'
+              sh 'cd ${GOPATH}/src'
+           // dir('/src')
+           // {
             // Create our project directory.
                //sh script:'''
                //#!/bin/bash
-               sh 'pwd'
-             sh 'cd /src'
+              // sh 'pwd'
+             //sh 'cd /src'
                //cd ${GOPATH}/src
                sh 'mkdir hello-world'
                //sh 'mkdir -p ${GOPATH}/src/hello-world'
@@ -28,7 +30,7 @@ pipeline {
                // Build the app.
                sh 'go build'
                
-           }    
+          // }    
        }
        }
        stage('Test') {
